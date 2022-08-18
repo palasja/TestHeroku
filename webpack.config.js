@@ -39,8 +39,7 @@ const baseConfig = {
     },
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, '../news-api-dist'),
-        hashFunction: 'xxhash64',
+        path: path.resolve(__dirname, '../dist'),
     },
     plugins: [
         new HtmlWebpackPlugin({
