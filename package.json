@@ -5,6 +5,7 @@
     "main": "webpack.base.config.js",
     "scripts": {
         "heroku-prebuild": "npm install --dev",
+        "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
         "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
         "build": "webpack --config ./webpack.config.js --env mode=prod",
         "lint": "eslint . --ext .ts"
